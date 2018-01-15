@@ -29,13 +29,13 @@ function destructivelyRemoveElementFromBeginningOfArray(array, index){
   return array;
 }
 function removeElementFromBeginningOfArray(array, index){
-  var x = array.slice(0, 1)
-  return x;
+  return array.slice(1)
+  
 }
 function destructivelyRemoveElementFromEndOfArray(array){
   array.pop();
   return array;
 }
 function removeElementFromEndOfArray(array){
-  array.slice(-1);
+  return array.slice(0, array.length-1);
 }

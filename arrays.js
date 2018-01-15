@@ -9,3 +9,29 @@ function destructivelyAddElementToBeginningOfArray(array, element){
   array.unshift(element);
   return array;
 }
+
+
+function addElementToEndOfArray(array, element){
+  return [array..., element]
+}
+function destructivelyAddElementToEndOfArray(array, element){
+  return array.push(element);
+}
+function accessElementInArray(array, index){
+  return array[index];
+}
+function destructivelyRemoveElementFromBeginningOfArray(array, index){
+  array.shift();
+  return array;
+}
+function removeElementFromBeginningOfArray(array, index){
+  var x = array.slice(0, 1)
+  return array;
+}
+function destructivelyRemoveElementFromEndOfArray(array){
+  array.pop();
+  return array;
+}
+function removeElementFromEndOfArray(array){
+  array.slice(-1);
+}
